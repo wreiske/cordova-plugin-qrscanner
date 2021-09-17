@@ -1,9 +1,9 @@
 {
-  "name": "@codaxy/cordova-plugin-qrscanner",
+  "name": "cordova-plugin-qrscanner-codaxy",
   "version": "3.0.3",
   "description": "Fast, energy-efficient, highly-configurable QR code scanner.",
   "cordova": {
-    "id": "@codaxy/cordova-plugin-qrscanner",
+    "id": "codaxy/cordova-plugin-qrscanner-codaxy",
     "platforms": [
       "ios"
     ]
