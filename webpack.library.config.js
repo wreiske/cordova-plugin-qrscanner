@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   devtool: 'source-map',
   entry: {
@@ -13,10 +13,8 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      comments: false,
-      sourceMap: true
-    })
-  ]
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
 };
